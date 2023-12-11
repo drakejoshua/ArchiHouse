@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArchiHouse - Welcome</title>
 
     <!-- link to the tailwind css cdn resource -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header class="h-screen bg-black relative z-10">
+        <nav class="flex w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
+            <a href="#" class="text-white flex items-center gap-x-4">
+                <svg aria-hidden="true" class="text-white stroke-current stroke-1 w-10" viewBox="0 0 24 24">
+                    <path 
+                    d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 
+                    1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 
+                    9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" 
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                
+                <span class="text-lg font-semibold flex flex-col gap-y-0">
+                    <span>
+                        ArchiHouse
+                    </span>
+
+                    <span class="font-normal text-sm capitalize">
+                        quality architectural experiences.
+                    </span>
+                </span>
+            </a>
+
+            <svg viewBox="0 0 24 24" class="text-white stroke-current stroke-1 w-7">
+                <path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </nav>
+
+        <div class="w-4/5 h-full bg-transparent absolute top-0 inset-x-72" style="z-index: -1;">
+            <img src="./hero_img.jpg" alt="" class="w-3/6 float-right object-cover h-full grayscale">
+        </div>
+        
+        <div class="w-4/5 h-full absolute top-0 inset-x-44 flex items-center" style="z-index: -1;">
+            <div class="w-full bg-white h-20">
+
+            </div>
+        </div>
+    </header>
 </body>
 </html>
