@@ -7,11 +7,50 @@
 
     <!-- link to the tailwind css cdn resource -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        nav {
+            width: 0rem;
+        }
+    </style>
 </head>
 <body>
+    <!-- the navigation overlay -->
+    <nav class="fixed flex flex-col top-0 right-0 h-screen bg-black z-10 overflow-auto transition-all duration-1000">
+
+        <!-- the cancel btn in the overlay -->
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="stroke-current stroke-2 text-white w-10 self-end cursor-pointer"
+            id="nav-cancel-btn">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+
+        <!-- the block of links -->
+        <div class="self-start flex flex-col gap-y-1">
+            <a href="#" class="text-white capitalize text-lg">
+                home
+            </a>
+            
+            <a href="#" class="text-white capitalize text-lg">
+                about
+            </a>
+            
+            <a href="#" class="text-white capitalize text-lg">
+                portfolio
+            </a>
+            
+            <a href="#" class="text-white capitalize text-lg">
+                partnerships
+            </a>
+            
+            <a href="#" class="text-white capitalize text-lg">
+                contact us
+            </a>
+        </div>
+    </nav>
+
     <!-- the page's hero and nav -->
-    <header class="h-screen bg-black flex flex-col items-center relative z-10">
-        <nav class="flex w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
+    <header class="h-screen bg-black flex flex-col items-center relative z-0">
+        <div class="flex w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
             <a href="#" class="text-white flex items-center gap-x-4">
                 <svg aria-hidden="true" class="text-white stroke-current stroke-1 w-10" viewBox="0 0 24 24">
                     <path 
@@ -32,10 +71,10 @@
                 </span>
             </a>
 
-            <svg viewBox="0 0 24 24" class="text-white stroke-current stroke-1 w-7 cursor-pointer">
+            <svg viewBox="0 0 24 24" class="text-white stroke-current stroke-1 w-7 cursor-pointer" id="overlay-menu-btn">
                 <path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-        </nav>
+        </div>
 
         <div class="w-4/5 h-full bg-transparent absolute top-0 inset-x-72" style="z-index: -1;">
             <img src="./hero_img.jpg" alt="" class="w-3/6 float-right object-cover h-full grayscale">
@@ -152,5 +191,7 @@
             </div>
         </div>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>
