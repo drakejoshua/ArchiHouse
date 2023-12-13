@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- the page's hero and nav -->
     <header class="h-screen bg-black flex flex-col items-center relative z-10">
         <nav class="flex w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
             <a href="#" class="text-white flex items-center gap-x-4">
@@ -31,7 +32,7 @@
                 </span>
             </a>
 
-            <svg viewBox="0 0 24 24" class="text-white stroke-current stroke-1 w-7">
+            <svg viewBox="0 0 24 24" class="text-white stroke-current stroke-1 w-7 cursor-pointer">
                 <path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </nav>
@@ -73,11 +74,11 @@
                         </span>
                         
                         <div class="flex flex-col gap-y-1">
-                            <span class="text-lg text-right uppercase pe-24 border-e-2">
+                            <span class="text-right uppercase pe-24 border-e-2">
                                 creating
                             </span>
                             
-                            <span class="text-lg uppercase pe-24 border-e-2">
+                            <span class="uppercase pe-24 border-e-2">
                                 experiences
                             </span>
                         </div>
@@ -86,5 +87,70 @@
             </div>
         </div>
     </header>
+
+    <!-- the "let's get to know" section -->
+    <section class="py-40">
+        <div class="w-4/5 mx-auto flex justify-between">
+
+            <!-- the side heading of the section -->
+            <div class="w-3/12">
+                <span class="text-sm uppercase font-semibold text-gray-500">
+                    /about us
+                </span>
+
+                <h1 class="text-5xl font-light uppercase mt-2">
+                    let's get to know
+                </h1>
+            </div>
+
+
+            <!-- the side content of the section -->
+            <div class="w-7/12">
+                <h2 class="uppercase text-2xl py-5 mb-5 border-b-2 border-black">
+                    creating commercial & residential architecture witha professional design team
+                </h2>
+
+                <!-- the articles -->
+                <div class="flex justify-between gap-x-28">
+
+                    <!-- article 1 -->
+                    <div>
+                        <h3 class="text-xl mb-3 font-semibold">
+                            /01
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Adipisci nobis hic commodi odit similique quisquam quia 
+                            tempore dolorem ipsum nesciunt nemo at veritatis accusamus 
+                            error perspiciatis, quo nam, rem architecto!
+                        </p>
+                    </div>
+                    
+                    <!-- article 2 -->
+                    <div>
+                        <h3 class="text-xl mb-3 font-semibold">
+                            /02
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Adipisci nobis hic commodi odit similique quisquam quia 
+                            tempore dolorem ipsum nesciunt nemo at veritatis accusamus 
+                            error perspiciatis, quo nam, rem architecto!
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#" class="uppercase text-lg font-semibold mt-16 inline-block underline">
+                    contact us
+
+                    <svg aria-hidden="true" class="text-black stroke-current stroke-1 w-4 inline-block" viewBox="0 0 24 24">
+                        <path d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
