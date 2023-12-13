@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="h-screen bg-black relative z-10">
+    <header class="h-screen bg-black flex flex-col items-center relative z-10">
         <nav class="flex w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
             <a href="#" class="text-white flex items-center gap-x-4">
                 <svg aria-hidden="true" class="text-white stroke-current stroke-1 w-10" viewBox="0 0 24 24">
@@ -40,9 +40,49 @@
             <img src="./hero_img.jpg" alt="" class="w-3/6 float-right object-cover h-full grayscale">
         </div>
         
-        <div class="w-4/5 h-full absolute top-0 inset-x-44 flex items-center" style="z-index: -1;">
-            <div class="w-full bg-white h-20">
+        <div class="w-4/5 h-full flex items-center">
+            <div class="w-full flex justify-between text-white">
+                <span>
+                    /01
+                </span>
 
+                <div class="w-11/12 flex flex-col gap-y-4">
+                    <!-- row 1 of decorative hero -->
+                    <span class="capitalize">
+                        / architect agency
+                    </span>
+
+                    <!-- row 2 of decorative hero -->
+                    <div class="flex justify-between pe-24 border-e-2">
+                        <span class="text-5xl font-light uppercase">
+                            designing
+                        </span>
+                        
+                        <span class="text-5xl font-light uppercase">
+                            / 01
+                        </span>
+                    </div>
+
+                    <!-- row 3 of decorative hero -->
+                    <div class="h-px w-11/12 bg-white"></div>
+
+                    <!-- row 4 of decorative hero -->
+                    <div class="flex justify-between">
+                        <span class="text-5xl font-light uppercase">
+                            spaces
+                        </span>
+                        
+                        <div class="flex flex-col gap-y-1">
+                            <span class="text-lg text-right uppercase pe-24 border-e-2">
+                                creating
+                            </span>
+                            
+                            <span class="text-lg uppercase pe-24 border-e-2">
+                                experiences
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
