@@ -48,6 +48,7 @@
         </div>
     </nav>
 
+
     <!-- the page's hero and nav -->
     <header class="h-screen bg-black flex flex-col items-center relative z-0">
         <div class="flex w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
@@ -127,6 +128,7 @@
         </div>
     </header>
 
+
     <!-- the "let's get to know" section -->
     <section class="py-40">
         <div class="w-4/5 mx-auto flex justify-between">
@@ -188,6 +190,77 @@
                         <path d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- the "contact us" section -->
+    <section class="pb-40">
+        <div class="w-4/5 mx-auto flex justify-between">
+            <div class="w-1/12 flex flex-col items-center gap-y-4">
+                <div class="w-full h-px bg-black"></div>
+                
+                <div class="w-px h-full bg-black"></div>
+                
+                <div class="w-full h-px bg-black"></div>
+            </div>
+
+            <img src="./contact_img.jpg" alt="" class="w-4/12 self-stretch">
+
+            <div class="w-6/12">
+                <h2 class="text-4xl uppercase font-light mt-4">
+                    contact us
+                </h2>
+
+                <form action="#">
+
+                    <div class="first:mt-12 mt-6 last:mb-16">
+                        <label for="name-input" class="text-base block mb-3 uppercase">
+                            name:
+                        </label>
+    
+                        <input type="text" id="name-input" 
+                            class="peer border-b-2 required:border-black w-full py-2 px-px focus:outline-none focus:border-2 focus:px-2 invalid:border-red-500"
+                            required>
+
+                        <span class="capitalize hidden peer-invalid:inline-block peer-invalid:text-red-500 mt-2">
+                            your name is required to identify you
+                        </span>
+                    </div>
+                    
+                    <div class="first:mt-12 mt-6 last:mb-16">
+                        <label for="phone-input" class="text-base block mb-3 uppercase">
+                            phone:
+                        </label>
+    
+                        <input type="number" id="phone-input" 
+                            class="peer border-b-2 required:border-black w-full py-2 px-px focus:outline-none focus:border-2 focus:px-2 invalid:border-red-500"
+                            required>
+
+                        <span class="capitalize hidden peer-invalid:inline-block peer-invalid:text-red-500 mt-2">
+                            your phone is required to contact you
+                        </span>
+                    </div>
+                    
+                    <div class="first:mt-12 mt-6 last-of-type:mb-16">
+                        <label for="message-input" class="text-base block mb-3 uppercase">
+                            message:
+                        </label>
+    
+                        <textarea id="message-input" 
+                            class="peer border-b-2 required:border-black w-full py-2 px-px focus:outline-none focus:border-2 focus:px-2 invalid:border-red-500"
+                            required></textarea>
+
+                        <span class="capitalize hidden peer-invalid:inline-block peer-invalid:text-red-500 mt-2">
+                            a message is required to understand your problem
+                        </span>
+                    </div>
+
+
+                    <input type="submit" value="send message" 
+                    class="py-3 px-5 rounded-lg bg-black text-white text-sm font-semibold inline-block uppercase hover:bg-gray-800 focus:bg-gray-800">
+                </form>
             </div>
         </div>
     </section>
