@@ -4,9 +4,9 @@ var navCancelBtn = document.getElementById("nav-cancel-btn")
 
 
 overlayMenuBtn.addEventListener( "click", function() {
-    navBar.classList.add( "p-7", "w-1/4" );
+    navBar.classList.add( "p-7", "w-3/4", "lg:w-2/5" );
 });
 
 navCancelBtn.addEventListener( "click", function() {
-    navBar.classList.remove( "p-7", "w-1/4" );
+    navBar.classList.remove( "p-7", "w-3/4", "lg:w-2/5" );
 });

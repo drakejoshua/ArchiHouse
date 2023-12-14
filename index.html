@@ -51,7 +51,7 @@
 
     <!-- the page's hero and nav -->
     <header class="h-screen bg-black flex flex-col items-center relative z-0">
-        <div class="flex w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
+        <div class="flex w-11/12 lg:w-4/5 mx-auto py-4 justify-between" style="z-index: 1;">
             <a href="#" class="text-white flex items-center gap-x-4">
                 <svg aria-hidden="true" class="text-white stroke-current stroke-1 w-10" viewBox="0 0 24 24">
                     <path 
@@ -77,19 +77,19 @@
             </svg>
         </div>
 
-        <div class="w-4/5 h-full bg-transparent absolute top-0 inset-x-72" style="z-index: -1;">
-            <img src="./hero_img.jpg" alt="" class="w-3/6 float-right object-cover h-full grayscale">
+        <div class="w-11/12 lg:w-4/5 h-full bg-transparent absolute top-0 lg:inset-x-72" style="z-index: -1;">
+            <img src="./hero_img.jpg" alt="" class="hidden lg:block w-3/6 float-right object-cover h-full grayscale">
         </div>
         
-        <div class="w-4/5 h-full flex items-center">
+        <div class="w-11/12 lg:w-4/5 h-full flex items-center">
             <div class="w-full flex justify-between text-white">
-                <span>
+                <span class="hidden lg:inline">
                     /01
                 </span>
 
                 <div class="w-11/12 flex flex-col gap-y-4">
                     <!-- row 1 of decorative hero -->
-                    <span class="capitalize">
+                    <span class="capitalize hidden lg:inline">
                         / architect agency
                     </span>
 
@@ -99,7 +99,7 @@
                             designing
                         </span>
                         
-                        <span class="text-5xl font-light uppercase">
+                        <span class="text-5xl font-light uppercase hidden lg:inline">
                             / 01
                         </span>
                     </div>
@@ -114,11 +114,11 @@
                         </span>
                         
                         <div class="flex flex-col gap-y-1">
-                            <span class="text-right uppercase pe-24 border-e-2">
+                            <span class="text-right uppercase pe-12 lg:pe-24 border-e-2">
                                 creating
                             </span>
                             
-                            <span class="uppercase pe-24 border-e-2">
+                            <span class="uppercase pe-12 lg:pe-24 border-e-2">
                                 experiences
                             </span>
                         </div>
@@ -130,11 +130,11 @@
 
 
     <!-- the "let's get to know" section -->
-    <section class="py-40">
-        <div class="w-4/5 mx-auto flex justify-between">
+    <section class="py-20 lg:py-40">
+        <div class="w-11/12 lg:w-4/5 mx-auto flex flex-wrap justify-between">
 
             <!-- the side heading of the section -->
-            <div class="w-3/12">
+            <div class="w-full mb-10 lg:w-3/12 lg:mb-px">
                 <span class="text-sm uppercase font-semibold text-gray-500">
                     /about us
                 </span>
@@ -146,13 +146,13 @@
 
 
             <!-- the side content of the section -->
-            <div class="w-7/12">
-                <h2 class="uppercase text-2xl py-5 mb-5 border-b-2 border-black">
+            <div class="w-full lg:w-7/12">
+                <h2 class="uppercase text-2xl py-5 mb-10 lg:mb-5 border-b-2 border-black">
                     creating commercial & residential architecture witha professional design team
                 </h2>
 
                 <!-- the articles -->
-                <div class="flex justify-between gap-x-28">
+                <div class="flex flex-wrap justify-between gap-x-28 gap-y-10 lg:gap-y-0">
 
                     <!-- article 1 -->
                     <div>
@@ -196,9 +196,9 @@
     
 
     <!-- the "contact us" section -->
-    <section class="pb-40">
-        <div class="w-4/5 mx-auto flex justify-between">
-            <div class="w-1/12 flex flex-col items-center gap-y-4">
+    <section class="pb-20 lg:pb-40">
+        <div class="w-11/12 lg:w-4/5 mx-auto flex justify-between">
+            <div class="hidden lg:flex w-1/12 flex-col items-center gap-y-4">
                 <div class="w-full h-px bg-black"></div>
                 
                 <div class="w-px h-full bg-black"></div>
@@ -206,9 +206,9 @@
                 <div class="w-full h-px bg-black"></div>
             </div>
 
-            <img src="./contact_img.jpg" alt="" class="w-4/12 self-stretch">
+            <img src="./contact_img.jpg" alt="" class="hidden lg:block w-4/12 self-stretch">
 
-            <div class="w-6/12">
+            <div class="w-full lg:w-6/12">
                 <h2 class="text-4xl uppercase font-light mt-4">
                     contact us
                 </h2>
